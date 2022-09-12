@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+    // 1.map() 方法创建一个新的数组，这个新数组由原数组中的每个元素都调用一次提供的函数后的返回值组成,主要用来处理数组元素
+    // 2.注意它直接返回一个新数组
+    // 3.不会改变原数组
+      let arr = [1, 4, 9];
+      let newArray = arr.map((item, index, arr) => {
+        return item * 2;
+      });
+      console.log(arr);
+      console.log(newArray);
+    </script>
+  </body>
+</html>

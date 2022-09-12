@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // filter() 创建一个新的数组,新数组中的元素是通过检查指定数组中[符合条件]的[所有]元素，主要用于[筛选]数组
+      // 注意它直接返回一个新数组
+      // 全部遍历完
+      let arr = [12, 66, 4, 88, 3, 7];
+      let newArr = arr.filter((item, index, array) => {
+        return item % 2 === 0;
+      });
+      console.log(newArr);
+    </script>
+  </body>
+</html>

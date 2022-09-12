@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <script>
+      //扩展运算符可以将数组或者对象转为用逗号分隔的参数序列
+      let ary = [1, 2, 3];
+      console.log(...ary);
+      //扩展运算符可以应用于合并数组
+      let ary1 = [1, 2, 3];
+      let ary2 = [4, 5, 6];
+      let ary3 = [...ary1, ...ary2];
+      console.log(ary3);
+      let div = document.querySelectorAll('div');
+      divs = [...div];
+      console.log(divs);
+    </script>
+  </body>
+</html>

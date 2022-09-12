@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //reverse()无参数，颠倒数组中元素的顺序
+      let arr = [1, 2, 3, 4, 5, 6];
+      const res = arr.reverse();
+      console.log(res); //[6,5,4,3,2,1]
+
+      //
+      let arr1 = [1, 4, 66, 77, 8, 43, 44];
+      arr1.sort(function (a, b) {
+        return a - b;
+      });
+      console.log(arr1); //[1, 4, 8, 43, 44, 66, 77]
+
+      let arr2 = [1, 4, 66, 77, 8, 43, 44];
+      arr2.sort(function (a, b) {
+        return b - a;
+      });
+      console.log(arr2);
+    </script>
+  </body>
+</html>

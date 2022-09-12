@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // find(),用于找出第一个符合条件的数组成员，如果没有找到返回 undefined
+      let ary = [
+        {
+          id: 1,
+          name: '上杉达也',
+        },
+        {
+          id: 2,
+          name: '上杉和也',
+        },
+      ];
+      //写法1：
+      //   let target = ary.find((item) => {
+      //     return item.id === 2;
+      //   });
+      //写法2：
+      //   let target = ary.find((item) => item.id === 2);
+      //   console.log(target);
+      let target = ary.find((item) => item.id === 3);
+      console.log(target); //undefined
+    </script>
+  </body>
+</html>

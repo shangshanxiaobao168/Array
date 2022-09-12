@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // some() 方法用于检测数组中的元素是否满足指定条件
+      // 注意它返回值是布尔值，如果查找到这个元素，就返回true，如果查找不到就返回false
+      // 如果找到第一个满足条件的元素，则终止循环，不在继续查找
+      let arr = [10, 30, 4];
+      let flag = arr.some((item, index, arr) => {
+        return item >= 30;
+      });
+      console.log(flag);
+    </script>
+  </body>
+</html>

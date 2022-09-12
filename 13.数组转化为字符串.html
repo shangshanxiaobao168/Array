@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //1. toString() 将我们的数组转换为字符串,了解即可
+      let arr = [1, 2, 3];
+      let str = arr.toString();
+      console.log(arr.toString());
+      console.log(typeof str); //string
+
+      // 2.join
+      let arr2 = ['green', 'pink', 'red', 'yellow'];
+      console.log(arr2.join('*'));
+
+      // 3.concat:连接两个或多个数组，不改变原数组，返回一个新数组
+      let arr3 = ['pink', 'green', 'orange', 'purple'];
+      let arr4 = ['skyblue'];
+      let arr5 = arr3.concat(arr4);
+      console.log(arr5);
+      console.log(arr3); //不影响原数组
+
+      // 4. slice(前包括，后不包括)，返回被劫取的新数组
+      let arr6 = ['pink', 'green', 'orange', 'purple'];
+      console.log(arr6.slice(0, 3)); //['pink', 'green', 'orange']
+      console.log(arr6); //不影响原数组
+
+      // 5. splice(从第几个索引开始删除，删除的个数)
+      console.log(arr6.splice(1, 2));
+      ['green', 'orange'];
+      console.log(arr6);
+      ['pink', 'purple']; //影响原数组
+    </script>
+  </body>
+</html>
